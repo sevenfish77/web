@@ -1,0 +1,292 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff;
+    width:100%;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.contain {
+    /*版心 提取 */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+
+/*顶部通栏  top*/
+.top {
+    height: 40px;
+    background: #f9f9f9;
+}
+    .top-box {
+        height: 40px;
+
+    }
+        .top-left {
+            width: 75px;
+            height: 40px;
+            line-height:40px;
+
+        }
+            .top-left img {
+                width: 20px;
+                height: 16px;
+                float:left;
+                margin-top:10px;
+            }
+            .top-left p {
+                color:#999999;
+            }
+        .top-right{
+            width: 566px;
+            height: 40px;
+
+            line-height:40px;
+
+        }
+            .top-right a,span {
+                color:#999999;
+                padding:0 3px;
+                
+            }
+                .top-right a:hover {
+                    color:#ff3253;
+                }
+            .weixin{
+                margin-right:11px;
+            }
+            .weibo{
+                margin-right:2px;
+            }
+
+
+    /*logo开始*/
+.logo {
+    height: 100px;
+
+}
+    .logo-left {
+        width: 480px;
+        line-height:100px;
+    }
+        .logo-left img  {
+            width: 140px;
+            height: 45px;
+            display:inline-block;
+            margin-top:-9px;
+        }
+        .logo-left p {
+            display:inline-block;
+            font-size:20px;
+            font-family:微软雅黑;
+            margin-left:12px;
+            color:#313131;
+        }
+    .logo-right {
+        width: 460px;
+        height: 100px;
+    }
+        .logo-right1 {
+            width: 138px;
+            height: 40px;
+            border: 1px #dddddd solid;
+            margin-top: 28px;
+            background: #f9f9f9;
+            line-height:40px;
+        }
+            .logo-right1 a {
+                color:#2e2e4f;
+            }
+            .logo-right1-zi{
+                margin-left:12px;
+
+            }
+        .logo-right2 {
+            width: 248px;
+            height: 37px;
+            border: 2px #ff3253 solid;
+            margin-top: 28px;
+            margin-left: 27px;
+            color: #919191;
+            background: #fff;
+        }
+          .logo-right2 input {
+              width: 234px;
+              height: 37px;
+              color: #919191;
+              margin-left: 14px;
+          }
+        .logo-right3 {
+            width: 40px;
+            height: 41px;
+            background: #ff3253;
+            margin-top: 28px;
+            line-height:40px;
+        }
+            .logo-right3 img {
+                width: 20px;
+                height: 20px;
+            }
+
+
+/*nav开始*/
+.nav {
+    height: 47px;
+    background: #eee;
+    overflow:hidden;/*防止子盒子位置错乱*/
+}
+    .nav-left{
+        width: 210px;
+        height: 48px;
+        background: #ff3253;
+        line-height:48px;
+    }
+        .nav-left img {
+            width: 20px;
+            height: 12px;
+            display: inline-block;
+            margin-left: 30px;
+        }
+    .nav-right {
+        width: 800px;
+        height: 48px;
+        background: darkred;
+
+    }
+
+
+/*footer1开始*/
+.footer1{
+    height: 111px;
+    background: cadetblue;
+    border-bottom: 1px #dddddd solid;
+}
+    .footer1-box{
+
+    }
+/*footer2开始*/
+.footer2 {
+    height: 222px;
+    background: lightseagreen;
+}
+    .footer2-box {
+        height: 222px;
+        border-bottom: 1px #dddddd solid;
+    }
+/*footer3开始*/
+.footer3 {
+    height: 213px;
+    background: mediumslateblue;
+}
+    .footer2-box {
+
+    }

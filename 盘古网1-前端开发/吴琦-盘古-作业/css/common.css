@@ -1,0 +1,359 @@
+/*初始化*/
+		body,div,ul,p,h1,li {
+			margin: 0;
+			padding: 0;
+			font: 12px 宋体;
+
+		}
+		img,input {
+			border:0 none;
+		}
+		input {
+			outline-style:none;
+		}
+		a {
+			color:#000;
+			text-decoration:none;
+		}
+		ul,li {
+			list-style: none;
+		}
+
+.top {
+	
+	height: 30px;
+	background: #212226;
+	margin: 0 auto;
+}
+	.welcome {
+		height: 28px;
+		width: 1000px;
+		/*border:1px red solid;*/
+		background: #212226;
+		margin: 0 auto;
+	}
+	 .welcome p {
+	 	color: white;
+	 	font-size: 12px;
+	 	line-height: 30px;
+	 	font-family: 微软雅黑;
+	 }
+
+.logo {
+	width: 1000px;
+	height: 100px;
+	/*border:1px black solid;*/
+	margin: 0 auto;
+}
+	.logo-tu {
+		
+		height: 100px;
+		/*background: yellow;*/
+		float: left;
+		line-height: 100px;
+	}
+	.logo-phone {
+		width: 280px;
+		height: 100px;
+		/*background: yellow;*/
+		float: right;
+	}
+		.logo-phone img {
+			width: 36px;
+			height: 36px;
+			margin-top: 34px;
+			float: left;
+		}
+		.logo-phone p {
+			color: #323338;
+			font-size: 28px;
+			font-family: 微软雅黑;
+			margin-top: 34px;
+			float: left;
+			margin-left: 15px;
+		}
+
+.nav {
+	height: 50px;
+	background: #212226;
+	position: relative;
+}
+	.nav-con {
+		width: 1000px;
+		height: 50px;
+		margin: 0 auto;
+		background: #212226;
+		
+	}
+		
+		.nav-con a {
+					font: 12px/50px 微软雅黑;
+					color: #333;
+					display: inline-block;
+					
+					padding: 0 11.8px;
+					color: white;
+					font-weight: bolder;
+				}
+				.nav-con a:hover {
+					background: #999;
+				}
+			
+
+	/*通栏大图*/
+	.tu {
+	height: 300px;
+	
+	/*border:1px #eee solid;*/
+	margin-top: -2px;
+	margin: 0 auto;
+	background: url(../images/cplbtl.png) no-repeat center top;
+	position: relative;
+
+}
+	.pf1 {
+		position: fixed;
+		right: 20px;
+		bottom: 90px;
+		z-index: 5;
+		}
+	.pf2 {
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		z-index: 5;
+	}
+	.tu-b {
+		height: 40px;		
+		margin: 0 auto;		
+	}
+		
+
+
+	/*友情链接*/
+
+	.friendLink {
+		height: 80px;
+		width: 1000px;
+		margin: 0 auto;
+		border-bottom: 1px #e5e5e5 solid;
+		background: #fff;
+	}
+		.friendLink p,.friendLink p a,.friendLink p a span{line-height: 80px;
+			color: #7d7d7d;
+			font-size: 16px;
+			font-family: 微软雅黑;
+			}
+			.friendLink p a span {
+				font-weight: bolder;
+			}
+
+	/*底部*/
+
+
+	.last {
+		height: 385px;
+		background: #212226;
+		overflow: hidden;
+	}
+		.last-box {
+			width: 1000px;
+			height: 310px;
+			
+			margin: 0 auto;
+			margin-top: 25px;
+		}
+			.last-box-nav {
+				width: 1000px;
+				height: 40px;
+				background: #28292c;
+			}
+				.last-box-nav a {
+					font: 12px/40px 微软雅黑;
+					color: #666666;
+					display: inline-block;					
+					padding: 0 13.9px;
+					color: white;
+					}
+					.last-box-nav a:hover {
+						background: #999;
+					}
+			.last-box-bottom {
+				width: 980px;
+				height: 240px;
+				
+				margin-top: 30px;
+			}
+				.last-box-bottom-one {
+					width: 456px;
+					height: 240px;
+					
+					float: left;
+				}
+					.last-box-bottom-one-1 {
+						height: 99px;
+						width: 456px;
+						border-bottom: 1px #46484b solid;
+					}
+						.last-box-bottom-one-1 h1 {
+							font: 40px/45px 微软雅黑;
+							color: #c2c2c2;
+						}
+						.dd {
+							
+							margin-top: 10px;
+							margin-left: 4px;
+							float: left;
+						}
+
+							.ss {
+								
+								float: left;
+								margin-top: 12px;
+								margin-left: 6px;
+							}
+								.ss a {color: #c2c2c2;
+								font: 14px/0 微软雅黑;}
+
+					.last-box-bottom-one-2 {
+						height: 95px;
+						width: 456px;
+						
+						margin-top: 28px;
+					}
+						.dt {
+							float: left;
+							margin-top: 2px;
+						}
+						.wz {
+							margin-top: 6px;
+							margin-left: 6px;
+							float: left;
+						}
+							.wz a {
+								color: #c2c2c2;
+								font: 14px/0 微软雅黑;
+							}
+						.zt { 
+							width: 456px;
+							height: 70px;
+							
+							float:left;
+							margin-top: 15px;
+						}
+							.zt p {
+								font: 12px/30px 微软雅黑;
+								color: #c2c2c2;
+							}
+							.zt p a {
+								font: 12px/30px 微软雅黑;
+								color: #c2c2c2;
+							}
+								.zt p a:hover {
+									color: #999;
+								}	
+
+				.last-box-bottom-two {
+					width: 195px;
+					height: 240px;
+					
+					float: left;
+					margin-left: 95px;
+					margin-top: -10px;
+				}
+					.last-box-bottom-two p {
+						font: 22px/43px Georgia;
+						color: #fafafa;
+
+					}
+					.last-box-bottom-two span {
+						font: 16px 微软雅黑;
+						color: #fafafa;
+					}
+					.last-box-bottom-two img {
+						display: inline-block;
+						margin-top: 20px;
+						margin-left: 2px;
+					}
+
+				.last-box-bottom-three {
+					width: 195px;
+					height: 175px;
+					
+					float: right;
+					margin-top: -10px;
+					
+				}
+					.last-box-bottom-three p {
+						font: 22px/43px Georgia;
+						color: #fafafa;
+					}
+					.last-box-bottom-three span {
+						display: inline-block;
+						margin-top: 10px;
+						font: 16px 微软雅黑;
+						color: #fafafa;
+					}
+					.tt {
+						width: 175px;
+						height: 125px;
+						
+						margin-top: 15px;
+					}
+						.tt-one,.tt-two,.tt-three,.tt-four,.tt-five,.tt-six,.tt-seven,.tt-eight,.tt-nine,.tt-ten,.tt-eleven,.tt-twleve {
+							width: 32px;
+							height: 32px;
+							background: red;
+							float: left;
+						}
+						.tt-one {
+							background: url(../images/icons.png) no-repeat 0px 0px;
+						}
+						.tt-two {
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -53px;
+						}
+						.tt-three {
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -105px;
+						}
+						.tt-four {
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -156px;							
+
+						}
+						.tt-five {
+							margin-top: 15px;
+							background: url(../images/icons.png) no-repeat 0px -209px;
+						}
+						.tt-six {
+							margin-top: 15px;
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -261px;
+						}
+						.tt-seven {
+							margin-top: 15px;
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -313px;
+						}
+						.tt-eight {
+							margin-top: 15px;
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -365px;
+						}
+						.tt-nine {
+							margin-top: 15px;
+							background: url(../images/icons.png) no-repeat 0px -417.7px;
+						}
+						.tt-ten {margin-top: 15px;
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -469px;
+						}
+						.tt-eleven {margin-top: 15px;
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -520px;
+						}
+						.tt-twleve {margin-top: 15px;
+							margin-left: 15px;
+							background: url(../images/icons.png) no-repeat 0px -573px;
+						}
