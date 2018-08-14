@@ -11,7 +11,7 @@ fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
     outline-style: none;
 }
 
-ul, ol {
+ul, ol ,li {
     list-style: none;				/*清除列表风格*/
 }
 
@@ -67,12 +67,11 @@ body {
 }
 
 a {
-
     text-decoration: none;
 }
 
 a:hover {
-    color: #C81623;
+    color: #ff3253;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -241,52 +240,132 @@ s, i, em {
 /*nav开始*/
 .nav {
     height: 47px;
-    background: #eee;
     overflow:hidden;/*防止子盒子位置错乱*/
 }
     .nav-left{
         width: 210px;
         height: 48px;
         background: #ff3253;
-        line-height:48px;
+        line-height: 48px;
+        overflow: hidden;
     }
         .nav-left img {
             width: 20px;
-            height: 12px;
+            height: 20px;
             display: inline-block;
             margin-left: 30px;
+            margin-top: 15px;
+            float: left;
+
+        }
+        .nav-left p a {
+            display:inline-block;
+            float: left;
+            color: #ffebff;
+            font-size: 17px;
+            font-family: 微软雅黑;
+            margin-left: 20px;
         }
     .nav-right {
-        width: 800px;
+        width: 785px;
         height: 48px;
-        background: darkred;
 
     }
+        .nav-right a {
+            font:16px/48px 微软雅黑;
+            padding: 0 19px;
+        }
+            .nav-right span:hover {
+                color: #ff3253;
+            }
 
 
-/*footer1开始*/
+    /*footer1开始*/
 .footer1{
     height: 111px;
-    background: cadetblue;
+
     border-bottom: 1px #dddddd solid;
 }
     .footer1-box{
+        height: 111px;
 
     }
+        .footer1-box img {
+            
+            display: block;
+            float: left;
+        }
 /*footer2开始*/
 .footer2 {
     height: 222px;
-    background: lightseagreen;
+    border-bottom: 1px #dddddd solid;
 }
-    .footer2-box {
-        height: 222px;
-        border-bottom: 1px #dddddd solid;
-    }
+
+        .footer2-left {
+            width: 947px;
+            height: 222px;
+
+        }
+            .footer2-left-list {
+                width: 158px;
+                height: 175px;
+                line-height: 28px;
+                margin-top: 40px;
+                margin-left: 22px;
+            }
+                    .footer2-left-list a {
+                        display:inline-block;
+                        font:12px/28px 微软雅黑;
+                        margin-left: 30px;
+                        color: #7d7d7d;
+                    }
+                        .footer2-left-list a:hover {
+                            color: #ff3253;
+                        }
+
+        .footer2-right {
+            width: 250px;
+            height: 222px;
+            background: palevioletred;
+        }
 /*footer3开始*/
 .footer3 {
     height: 213px;
     background: mediumslateblue;
+    overflow: hidden;
 }
-    .footer2-box {
+    .footer3-one {
+        width: 850px;
+        height: 14px;
 
+        margin: 0 auto;
     }
+        .footer3-one a {
+            display:inline-block;
+            font-size: 14px;
+            font-family: 微软雅黑;
+            padding: 0 25px;
+            margin-top: 30px;
+            color: #333333;
+
+        }
+        .footer3-one a:hover {
+            color: #ff3253;
+        }
+    .footer3-two {
+        margin-top: 70px;
+    }
+        .footer3-two i {
+            font-size: 12px;
+            color: #333333;
+            margin-left: 10px;
+        }
+        .footer3-two a{
+            font-size: 12px;
+            color: #858585;
+        }
+            .footer3-two a:hover {
+                color: #ff3253;
+            }
+
+
