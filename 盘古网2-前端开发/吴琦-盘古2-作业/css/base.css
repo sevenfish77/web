@@ -284,8 +284,13 @@ s, i, em {
     .nav-right {
         width: 785px;
         height: 48px;
-
+        position: relative;
     }
+        .nav-right img{
+            display:inline-block;
+            position: absolute;
+            left: 290px;
+        }
         .nav-right a {
             font:16px/48px 微软雅黑;
             padding: 0 19px;
@@ -341,8 +346,23 @@ s, i, em {
         .footer2-right {
             width: 250px;
             height: 222px;
-            background: palevioletred;
         }
+            .footer2-right img {
+                width: 73px;
+                height: 73px;
+                background: black;
+                margin-top: 50px;
+            }
+            .footer2-right p {
+                margin-top: 25px;
+                font-size: 12px;
+                color: #929292;
+            }
+            .footer2-right h1 {
+                color: #ff3253;
+                font-size: 24px;
+                margin-top: 13px;
+            }
 /*footer3开始*/
 .footer3 {
     height: 213px;
@@ -382,5 +402,46 @@ s, i, em {
             .footer3-two a:hover {
                 color: #ff3253;
             }
+    .footer3-three {
+        width: 620px;
+        margin: 0 auto;
+
+    }
+        .footer3-three span {
+            color: #858585;
+            font: 12px/30px 微软雅黑;
+            padding: 0 30px;
+        }
+    .footer3-four {
+        width: 430px;
+        margin: 0 auto;
+        margin-top: 15px;
+
+    }
+        .footer3-four i {
+            display: inline-block;
+           font-size: 22px;
+            border-radius: 50%;
+            
+        }
+        .footer3-four a {
+            display:inline-block;
+            margin-left: 10px;
+            color:#333;
+            font:12px/35px 微软雅黑;
+        }
+            .footer3-four a:hover {
+                color: #ff3253;
+            }
+        .icon-wz,.icon-qq,.icon-fx {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background: #f2f2f2;
+            border-radius: 50%;
+            line-height:35px;
+            text-align: center;
+            margin-left: 40px;
+        }
 
 

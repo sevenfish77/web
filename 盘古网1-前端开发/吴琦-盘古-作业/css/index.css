@@ -7,8 +7,9 @@
 		}
 		img,input {
 			border:0 none;
+
 		}
-		input {
+		input,select,option {
 			outline-style:none;
 		}
 		a {
@@ -123,13 +124,13 @@
 
 
 .tu {
-	height: 400px;
-	
+	min-height: 400px;
+	width:100%;
 	/*border:1px #eee solid;*/
 	margin-top: -2px;
 	margin: 0 auto;
 	background: url(../images/banner.jpg) no-repeat center top;
-	position: relative;
+
 
 }
 	.pf1 {
@@ -145,7 +146,8 @@
 	}
 	.tu-b {
 		height: 40px;		
-		margin: 0 auto;		
+		margin: 0 auto;
+		position: relative;
 	}
 		.tu-l {
 			position: absolute;
@@ -222,7 +224,7 @@
 				.workClothes-1-l-z span {
 					font-size: 24px;
 					color: #353136;
-					font-family: "Microsoft Yahei";
+					font-family: 微软雅黑;
 				}
 				.workClothes-1-l-z p {
 					
@@ -262,12 +264,8 @@
 					color: #5a5a5a;
 					font: 12px/0 微软雅黑;
 					/*小三角部分*/
-				
-　				 /*　appearance: none;
-					
-					-webkit-appearance:none;*/
-					/*background: url(../images/xsj.png) no-repeat scroll right center transparent;*/
-					padding-right: 5px; 
+
+					padding-right:5px;
 
 
 				}
@@ -508,18 +506,18 @@
 		.example4 {
 			width: 50px;
 			height: 50px;
-			background: url(../images/zz.png) no-repeat center top;
 			position: absolute;
 			left: -75px;
-			top: 180px;
+			top: 200px;
+			opacity: 0.7;
 		}
 		.example5 {
 			width: 50px;
 			height: 50px;		
 			position: absolute;
 			left: 1025px;
-			top: 180px;
-			background: url(../images/yy.png) no-repeat center top;
+			top: 200px;
+			opacity: 0.7;
 		}
 
 	.young {
@@ -626,7 +624,7 @@
 				width: 158px;
 				height: 38px;
 				border: 2px #dcdcdc solid;
-				margin: 0 auto;
+
 				text-align: center;
 			}
 				.about-r-3 a {
@@ -857,16 +855,17 @@
 		.company-zj {
 			
 			position: absolute;
-			left: -40px;
-			top: 200px;
-			opacity: 0.5;
+			left: -80px;
+			top: 230px;
+			opacity: 0.8;
 
 		}
 		.company-yj {
 			position: absolute;
-			left: 1020px;
-			top: 200px;	
-			opacity: 0.5;
+			left: 1060px;
+			top: 225px;
+			opacity: 0.8;
+
 		}
 
 	.do {
