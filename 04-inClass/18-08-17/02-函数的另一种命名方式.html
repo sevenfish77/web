@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数的另一种命名方式</title>
+</head>
+<body>
+    <script>
+        //函数自调用
+       // 从：
+        var f1=function(){
+            console.log("haha");
+        };
+        f1();
+        //变为：
+        (function(){console.log("haha");})();
+
+        //函数数据类型
+        function f1(){
+            console.log("haha");
+        }
+        console.log(typeof f1);
+
+        //回调函数
+       function f1(fn){
+            fn();
+        }
+
+
+    </script>
+</body>
+</html>
