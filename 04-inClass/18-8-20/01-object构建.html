@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象构建</title>
+</head>
+<body>
+<script>
+    //案例1：
+//    var obj=new Object();
+//    obj.name="小红";
+//    obj.eat=function(){
+//        console.log("喜欢吃葡萄");
+//    }; //——匿名函数：大括号后有分号
+//    //小红有玩游戏行为
+//    obj.play=function(){
+//        console.log("喜欢王者荣耀");
+//    };
+//    //小红有做饭行为
+//    obj.cook=function(){
+//        console.log("今日买菜");
+//        console.log("洗菜");
+//        console.log("炒菜");
+//    };
+//    //学习行为
+//    obj.learn=function(){
+//        console.log("学习js对象创建");
+//    };
+//    //吃水果
+//    obj.eatFruit=function(){
+//        console.log("吃荔枝");
+//    };
+//    //方法调用
+//    console.log(obj.name);
+//    obj.eat();
+//    obj.eatFruit();
+//    obj.play();
+//    obj.cook();
+//    obj.learn();
+
+    //练习1：有一只黄色的小狗，名字大黄，今年三岁，250斤只能重量，每次走路都很慢，喜欢吃大骨头
+//    var obj=new Object();
+//    obj.color="黄色";
+//    obj.name="大黄";
+//    obj.age="3";
+//    obj.weight="250g";
+//    //走路慢
+//    obj.walk=function(){
+//        console.log("走路很慢");
+//    };
+//    //喜欢大骨头
+//    obj.eat=function(){
+//        console.log("喜欢大骨头");
+//    };
+//    //调用
+//    console.log(obj.color);
+//
+//    console.log(obj.name);
+//    console.log(obj.age);
+//    console.log(obj.weight);
+//    obj.walk();
+//    obj.eat();
+
+    //练习2：一个手机对象，有型号，有颜色，可以打电话，发短信
+//    var obj=new Object();
+//    obj.type="ET5200";
+//    obj.color="white";
+//    obj.call=function(){
+//        console.log("这部手机，可以打电话");
+//    };
+//    obj.send=function(){
+//        console.log("这部手机，可以发短信");
+//    };
+//    //调用
+//    console.log("型号:"+obj.type);
+//    console.log("颜色:"+obj.color);
+//    obj.call();
+//    obj.send();
+
+    //案例2：创建一个人的对象
+//    var person=new Object();
+//    person.name="小明";
+//    person.age=10;
+//    person.sayHi=function(){
+//        console.log("嗨，你吃了么？");
+//    };
+//
+//    var stu=new Object();
+//    stu.name="小红";
+//    stu.age=18;
+//    stu.study=function(){
+//        console.log(this.name+this.age+"岁了，学习敲代码");
+//    };
+//    stu.study();
+//
+//    var dog=new Object();
+//    dog.name="哮天";
+//    dog.color="黑色";
+//    dog.say=function(){
+//        console.log("我是哮天犬");
+//    };
+//    console.log(person instanceof Object);
+//    console.log(stu instanceof Object);
+//    console.log(dog instanceof Object);
+
+    //案例2：
+//    function createObject(name,age){
+//        var obj=new Object();
+//        obj.name=name
+//        obj.age=age;
+//        obj.sayHi=function(){
+//            console.log("您好！我叫"+this.name+"，我今年"+this.age+"岁了。");
+//        }
+//        return obj;
+//    }
+//    var per=createObject("小红",30);
+//    per.sayHi();
+
+    //用自定义构造函数的方法实现下面例子
+    //案例3：创建一个图片的对象，图片有宽，高，大小4M，图片可以展示内容
+//    function picture(weight,height,size){
+//        this.weight=weight;
+//        this.height=height;
+//        this.size=size;
+//        this.show=function(){
+//            console.log("展示图片");
+//        };
+//    }
+//    var obj=new picture("100px","100px","4M");
+//    console.log(obj.weight);
+//    console.log(obj.height);
+//    console.log(obj.size);
+//    obj.show();
+
+    //案例4：创建一个小猫的对象，小猫又颜色，体重，年龄，小猫可以抓耗子，可以打架
+//    function cat(color,weight,age){
+//        this.color=color;
+//        this.weight=weight;
+//        this.age=age;
+//        this.catch=function(){
+//            console.log("小猫可以抓耗子");
+//        };
+//        this.fight=function(){
+//            console.log("小猫爱打架");
+//        }
+//    }
+//    var obj=new cat("灰色","20g","1岁");
+//    console.log(obj.color);
+//    console.log(obj.weight);
+//    console.log(obj.age);
+//    obj.catch();
+//    obj.fight();
+
+    //案例5
+    var obj1={};
+    obj1.name="小明";
+    obj1.age=20;
+    obj1.lover=function(){
+        console.log("I Love You");
+    };
+    console.log(obj1.name);
+    console.log(obj1.age);
+    obj1.lover();
+
+    var obj2={
+        name:"小红",
+        age:20
+    }
+
+    console.log(obj2.name);
+    console.log(obj2.age);
+
+</script>
+</body>
+</html>
