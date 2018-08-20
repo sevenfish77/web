@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>break关键字的使用</title>
+</head>
+<body>
+	<script>
+		/*案例：找出100-200之间，第一个可以被7整除的数*/
+		for(var i=100;i<=200;i++){
+			if(i%7==0){
+				document.write(i);
+				break;
+			}
+		}
+		document.write("<hr/>");
+		/*案例：找出100-200之间，所有的奇数和*/
+		var sum=0;
+		for(var i=100;i<=200;i++){
+			if(i%2!==0){
+				sum+=i;
+				continue;
+			}
+		}
+		document.write(sum);
+		document.write("<hr/>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外边距合并</title>
+	<style>
+		.b1 {
+			width: 100px;
+			height: 100px;
+			background: red;
+			margin-bottom: 10px;
+		}
+		.b2 {
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			margin-top: 10px;
+		}
+
+		.b3 {
+			width: 300px;
+			height: 300px;
+			background: black;
+			margin-top: 20px;
+			overflow: hidden;
+		}
+			.b3-son {
+				width: 100px;
+				height: 100px;
+				background: blue;
+				margin-top: 20px;
+			}
+	</style>
+</head>
+<body>
+	<div class="b1"></div>
+	<div class="b2"></div>
+
+<br>
+<hr>
+<br>
+	<div class="b3">
+		<div class="b3-son">
+		</div>
+	</div>
+</body>
+</html>

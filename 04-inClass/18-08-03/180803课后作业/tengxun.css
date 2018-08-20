@@ -1,0 +1,627 @@
+
+		/*初始化*/
+		body,div,ul,p,h1,li{
+			margin: 0;
+			padding: 0;
+			font: 12px 宋体;
+		}
+		img,input{
+			border:0 none;
+		}
+		input{
+			outline-style:none;
+		}
+		a{
+			color:#000;
+			text-decoration:none;
+		}
+		
+
+		.all{
+			width: 1170px;
+			height: 665px;
+			/*border:1px yellow solid;*/
+			margin:0 auto;
+			background: #f0f7ff;
+		}
+			.nav{
+				width: 1170px;
+				height: 40px;
+				/*border:1px yellow solid;*/
+				line-height:40px;
+				background: #d8e9f7;
+			}
+				.nav-left{
+					width: 1015px;
+					height: 40px;
+					line-height:40px;
+					background: #d8e9f7;
+					margin-left:20px;
+					float:left;
+				}
+
+
+				/*Tooltips*/
+.tooltips1{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips1:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips1 span{
+display: none;
+
+}
+.tooltips1:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+.tooltips2{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips2:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips2 span{
+display: none;
+
+}
+.tooltips2:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+.tooltips3{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips3:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips3 span{
+display: none;
+
+}
+.tooltips3:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+}
+
+.tooltips4{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips4:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips4 span{
+display: none;
+
+}
+.tooltips4:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+.tooltips5{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips5:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips5 span{
+display: none;
+
+}
+.tooltips5:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+.tooltips6{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips6:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips6 span{
+display: none;
+
+}
+.tooltips6:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+.tooltips7{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips7:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips7 span{
+display: none;
+
+}
+.tooltips7:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+.tooltips8{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips8:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips8 span{
+display: none;
+
+}
+.tooltips8:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:29px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+.tooltips9{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips9:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips9 span{
+display: none;
+
+}
+.tooltips9:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+.tooltips10{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips10:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips10 span{
+display: none;
+
+}
+.tooltips10:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:27px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+}
+
+.tooltips11{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips11:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips11 span{
+display: none;
+
+}
+.tooltips11:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:26px;
+left:39px;
+width:0;
+height:0;
+border:9px solid transparent;
+border-bottom-color:#586d80;
+}
+
+.tooltips12{
+position:relative; /*这个是关键*/
+z-index:2;
+}
+.tooltips12:hover{
+z-index:3;
+background:none; /*没有这个在IE中不可用*/
+}
+.tooltips12 span{
+display: none;
+
+}
+.tooltips12:hover span{ /*span 标签仅在 :hover 状态时显示*/
+display:block;
+position:absolute;
+top:22px;
+left:25px;
+width:0;
+height:0;
+border:11px solid transparent;
+border-bottom-color:#586d80;
+
+}
+
+
+
+					.nav-left a{
+						font:20px/40px 黑体;
+						color:#41596b;
+						display:inline-block;
+						padding:0 14px;
+					}
+						.nav-left a:hover{
+							color:black;
+							font:22px/40px 黑体;
+						}
+				.nav-right{
+						width: 110px;
+						height: 40px;
+						line-height:40px;
+						float:left;
+						margin-right:20px;
+					}
+					.nav-right img{
+						width: 30px;
+						height: 30px;
+						margin-left: 6px;
+						margin-top: 5px;
+						float:left;
+
+					}	
+						
+					.nav-right a{
+						
+						font:22px/40px 宋体;
+						color:#95a2b6;
+						display:inline-block;
+						padding:0 14px;
+						margin-left: 2px;
+						float:left;
+					}
+						.nav-right a:hover{
+							color:#fff;
+						}
+			.line{
+				width: 1170px;
+				border-bottom:4px #526980 solid ;
+				margin-top: 3px;
+			}
+
+			.down{
+				width: 1130px;
+				height: 560px;
+				/*border:1px black solid;*/
+				margin-left: 22px;
+				margin-top: 20px;
+			}
+				.down-left{
+					width: 370px;
+					height: 560px;
+				/*	border:1px yellow solid;*/
+					float:left;
+				}
+					.down-left img{
+						width: 370px;
+						height: 220px;
+					}
+					.down-left-1{
+						width: 366px;
+						height: 190px;
+						border:2px #dddfde solid;
+						margin-top: 20px;
+					}
+						.down-left-1-1{
+							width: 340px;
+							height: 120px;
+							/*border:1px black solid;*/
+							margin-top: 15px;
+							margin-left: 12px;
+						}
+
+							.down-left-1-1-1{
+								width: 168px;
+								height: 120px;
+								float:left;
+							}
+							.down-left-1-1-1 img{
+								width: 168px;
+								height: 120px;
+								
+							}
+							.down-left-1-1-2{
+								width: 160px;
+								height: 120px;
+								/*border:1px black solid;*/
+								float:left;
+								margin-top: 10px;
+								margin-left: 10px;
+
+							}
+								.down-left-1-1-2 h1 a {
+									font-size: 22px;
+									
+								}
+									.down-left-1-1-2 h1 a:hover{
+										color:#6483a3;
+									}
+								.down-left-1-1-2 p{
+									margin-top: 13px;
+									font-size:20px;
+									line-height: 30px;
+								}
+							.down-left-1-1-3{
+								width: 340px;
+								height: 35px;
+								/*border:1px black solid;*/
+								float:left;
+								margin-top: 5px;
+							}
+								.down-left-1-1-3 ul li{
+									margin-left: 12px;
+									line-height: 35px;
+								}
+								.down-left-1-1-3 ul li a{
+									font:19px/20px 宋体;
+								}
+									.down-left-1-1-3 ul li a:hover{
+										color:#6483a3;
+									}
+					.down-left-2{
+						width: 366px;
+						height: 50px;
+						text-align: center;
+						border:2px #8dc4e7 solid;
+						background: #82cdf7;
+					}
+
+						.down-left-2 a{
+							line-height:50px;
+							color:white;
+							font-size: 24px;
+						}
+							
+							.down-left-2 span{
+								color:#34679f;
+							}
+
+					.down-left-3{
+						width: 366px;
+						height: 70px;
+						/*border:1px red solid;*/
+						margin-top: 15px;
+					}
+						.down-left-3-l{
+							width: 183px;
+							float:left;
+						}
+						.down-left-3-l ul{
+							margin-top: 10px;
+						} 
+						.down-left-3-l li{
+							line-height: 25px;
+							list-style: none;
+						}
+						.down-left-3-l a{
+							font-size: 20px;
+							color:#91918f;
+						}
+							.down-left-3-l a:hover{
+								color:#343e40;
+							}
+
+						.down-left-3-r{
+							width: 183px;
+							float:left;
+
+						}
+						.down-left-3-r ul{
+							margin-top: 10px;
+						}
+						.down-left-3-r li{
+							line-height: 25px;
+							list-style: none;
+						}
+						.down-left-3-r a{
+							font-size: 20px;
+							color:#91918f;
+						}
+							.down-left-3-r a:hover{
+								color:#343e40;
+							}
+				.down-center{
+					width: 415px;
+					height: 560px;
+					/*border:1px red solid;*/
+					float:left;
+					margin-left: 35px;
+				}
+					.down-center1{
+						height: 215px;
+						width: 415px;
+						border-bottom:2px #dddfde dashed;
+					}
+						.down-center1 h1 a{
+							font-weight: bolder;
+							color:#6483a3;
+							font:29px/30px 微软雅黑;
+						}
+							.down-center1 h1 a:hover{
+								color:black;
+							}
+						.down-center1 ul{
+							margin-top: 25px;
+							margin-left: 15px;
+						}
+						.down-center1 ul li{
+							line-height: 30px;
+						}
+						.down-center1 ul li a{
+							font:22px/35px 宋体;
+							color:#4f4f4d;
+							font-weight: bolder;
+						}
+							.down-center1 ul li a:hover{
+								color:#6483a3;
+							}
+					.down-center2{
+						height: 200px;
+						width: 415px;
+						border-bottom: 2px #dddfde dashed;
+						margin-top: 20px;
+					}
+						.down-center2 ul{
+							margin-top: 25px;
+							margin-left: 15px;
+						}
+						.down-center2 ul li{
+							line-height: 30px;
+						}
+						.down-center2 ul li a{
+							font:22px/35px 宋体;
+							color:#4f4f4d;
+							font-weight: bolder;
+						}
+							.down-center2 ul li a:hover{
+								color:#6483a3;
+							}
+					.down-center3{
+						
+						width: 415px;
+						height: 100px;
+						margin-top: 15px;
+					}
+						.down-center3 span{
+							font-size: 24px;	
+							font-family: 宋体；
+							font-weight:bolder;
+							color:black;
+						}
+						.down-center3 ul{
+							margin-top: 25px;
+							margin-left: 15px;
+						}
+						.down-center3 ul li{
+							line-height: 30px;
+						}
+						.down-center3 ul li a{
+							font:22px/35px 宋体;
+							color:#4f4f4d;
+							font-weight: bolder;
+						}
+							.down-center3 ul li a:hover{
+								color:#6483a3;
+							}
+				.down-right{
+					width: 269px;
+					height: 560px;
+					/*border:1px black solid;*/
+					float:left;
+					margin-left: 35px;
+				}
+
+					.down-right-1{
+						width: 269px;
+						height: 420px;
+						/*border:1px black solid;*/
+					}
+						.down-right-1 img{
+							width: 269px;
+							height: 420px;
+						}
+					.down-right-2{
+						height: 132px;
+						width: 269px;
+						/*border:1px red solid;*/
+						margin-top: 16px;
+					}
+						.down-right-2 img{
+							width: 269px;
+							height: 132px;
+						}	
+	

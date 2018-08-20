@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document.write()</title>
+</head>
+<body>
+	<script>
+		//document.write()
+		//语法：
+		document.write("★");
+		document.write("<hr/>");
+
+		/*5X5个五角星*/
+		for(var i=1;i<6;i++) {
+			for(var j=0;j<i;j++) {
+				document.write("★");
+			}
+			document.write("<br/>");
+		}
+		document.write("<hr/>");
+		/*九九乘法表*/
+		for(var i=1;i<=9;i++){
+			for(var j=1;j<=i;j++){
+				document.write(j+"*"+i+"="+j*i+"&nbsp;");
+			}
+			document.write("<br/>");
+		}
+		document.write("<hr/>");
+
+
+		/*九九乘法表升级版*/
+		document.write("<table border='1' cellspacing='0' callspadding='0'>");
+		for(var i=1;i<=9;i++){
+			document.write("<tr>");
+			for(var j=1;j<=i;j++){
+				document.write("<td>");
+				document.write(j+"*"+i+"="+j*i+"&nbsp;");
+				document.write("</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+		document.write("<hr/>");
+
+
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>while循环</title>
+</head>
+<body>
+	<script>
+		/*案例1：输出10次“哈哈，我最美”*/
+		// var i;
+		// while(i<10){
+		// 	alert("哈哈，我最美");
+		// 	i++;
+		// }
+
+		
+		/*案例2：计算1-100之间的所有数字的和*/
+		// var a=1;
+		// var sum=0
+		// while(a<=100){
+		// 	sum+=a;
+		// 	a++;
+		// }
+		// console.log(sum);
+		// 
+		
+		/*案例3：6的阶乘*/
+		// var a=6;
+		// var sum=1;
+		// while(a>=1){
+		// 	sum*=a;
+		// 	a--;
+			
+		// }
+		// console.log(sum);
+		// 
+		
+		/*案例4:求1-100之间所有偶数的和*/
+		// var a=1;
+		// var sum=0
+
+		// while(a<=100){
+
+		// 	if(a%2==0){
+		// 		sum+=a;
+		// 	}
+		// 	a++;
+					
+		// }
+		// console.log(sum);
+
+		/*案例5:求1-100之间所有奇数的和*/
+		// var a=1;
+		// var sum=0
+
+		// while(a<=100){
+
+		// 	if(a%2!=0){
+		// 		sum+=a;
+		// 	}
+		// 	a++;
+					
+		// }
+		// console.log(sum);
+		
+		/*案例6：1-100之间所有能被7整除的数字*/
+		// var a =1;
+		// var sum =0;
+		// while(a<=100){
+		// 	 if(a%7==0){
+		// 	 	sum+=a;
+		// 	 }
+		// 	 a++;
+		// }
+		// console.log(sum);
+
+		/*案例7：求账号，密码是否一致，登陆的效果：
+				 提示用户输入账号；
+				 提示用户输入密码；
+				 如果账号密码不对，则一直提示用户输入
+				 如：账号：admin  密码：123456
+				 当账号和密码都正确时，提示“登陆正确”
+		*/
+		var username=prompt("username1");
+		var password=prompt("password1");
+		
+		
+		while(username!="admin" || password!="123456"){
+			alert("请您重新输入");
+			 username=prompt("username2");
+			 password=prompt("password2");
+		}
+		alert("登陆正确");
+	</script>
+</body>
+</html>

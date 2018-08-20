@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数</title>
+</head>
+<body>
+	<script>
+		//案例1：用函数求两个数字的和
+		// function getHe(){
+		// 	var a=5;
+		// 	var b=6;
+		// 	document.write(a+b);
+		// }
+		// getHe();
+		// document.write("<br/>")
+
+		//案例2：用函数求三个数字的和
+		// var a=5;
+		// var b=5;
+		// var c=5;
+		// function getHh(){
+		// 	document.write(a+b+c);
+		// }
+		// getHh();
+		// document.write("<br/>")
+
+		//案例3：用函数求两个数最大值
+		// var a=5;
+		// var b=10;
+		// function getMax(){
+		// 	if(a>b){
+		// 		document.write(a);
+		// 	}else{
+		// 		document.write(b);
+		// 	}
+		// }
+
+		// getMax();
+		// document.write("<br/>")
+		//案例4：求三个数字的最大值（？？？）
+		//
+		// var arr=[3,5,9];
+		// function getMax2(){
+		// 		for(i=0;i<3;i++){
+		// 		for(j=0;j<3;j++){
+		// 			if(arr[j]>arr[j+1]){
+		// 				temp=arr[j];		//将arr[j]的值赋给一个中间数
+		// 		 		arr[j]=arr[j+1];	
+		// 		 		arr[j+1]=temp;
+		// 			}
+		// 		}
+		// 	}
+		// 	document.write(arr[j]);
+		// }
+		
+
+		//案例5：求1-100之间所有数字的和
+		// function getSum(){
+		// 	var sum=0;
+		// 	for(i=1;i<=100;i++){
+		// 		sum+=i;
+		// 	}
+		// 	return sum;
+		// }
+		// var sum=getSum();
+		// console.log(sum);
+		//案例6：求1-n之间所有数字的和
+		// function getSum(){
+		// 	var sum=0;
+		// 	for(i=1;i<=5;i++){
+		// 		sum+=i;
+		// 	}
+		// 	return sum;
+		// }
+		// var sum=getSum();
+		// console.log(sum);
+		//案例7：求n-m之间所有数字的和
+		// function getSum(){
+		// 	var sum=0;
+		// 	for(i=10;i<=20;i++){
+		// 		sum+=i;
+		// 	}
+		// 	return sum;
+		// }
+		// var sum=getSum();
+		// console.log(sum);
+		//案例8：求两个数字中的最大值(??)
+//		function getSum(){
+//			var sum=1+2;
+//			return sum;
+//		}
+//		var sum=getSum();
+//		console.log(sum);
+		//案例9：
+
+		//案例10：求3个数中的最大值(??)
+//		function getMax(a,b,c) {
+//			for(var i=0;i<3;i++){
+//				i>(i+1)?i:(i+1);
+//			}
+//			var a=3;
+//
+//		}
+
+		//案例11：求2个数字的差
+		function getJian(a,b){
+			return a-b;
+		}
+		var a=10;
+		var b=5;
+		var j=getJian(a,b);
+		console.log(j);
+
+		//案例12：求一组数字中的最大值
+		var arr=[];
+		var num =prompt("请输入数字：")
+		function getArray(){
+			for(var i=0;i<num;i++){
+				var a=prompt("请您输入"+(i+1)+"个数字");
+				arr[i]=a;
+			}
+
+
+			return arr;
+			return max;
+		}
+		getArray();
+		console.log(arr);
+		//最高分
+		function getArrayMax(){
+			var max = arr[0];
+			for(i=0;i<=num;i++){
+				//最高分
+				if(arr[i]>max){
+					max=arr[i];
+				}
+
+			}
+		}
+		console.log("big："+max);
+
+
+		//案例13：求一组数字中的最小值
+
+	</script>
+</body>
+</html>

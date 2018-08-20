@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>do-while循环</title>
+</head>
+<body>
+	<script>
+		/*案例1：用do-while实现：输出10次“哈哈哈，我最美！！！”*/
+		// var i=0;
+		// do{
+		// 	alert("哈哈哈，我最美！！！hhh.");
+		// 	i++;
+		// }while(i<2);
+
+		/*案例2：
+				问用户，“你觉得我漂亮么”提示输入y/n
+				若n，就循环，继续问
+				若y，结束，提示你真有眼光
+		*/
+		// var pl=prompt("你觉得我漂亮么？");   //有bug
+		// if(pl=="n" || pl=="y"){
+		// 	do{
+		// 		pl=prompt("你觉得我漂亮么？");
+		// 	}while(pl=="n");
+		// 	do{
+		// 		alert("你真有眼光!");
+		// 	}while(pl=="y");
+		// }else{
+		// 	do{
+		// 		alert("输入错误");
+		// 	}while(pl!="n" && pl!="y");
+			
+		
+		
+		// var pl;
+		// do{
+		// 	pl=prompt("你觉得我漂亮么？");
+		// }while(pl!=="y");
+		// alert("你真有眼光");
+		
+		/*
+			案例3：求100以内所有3的倍数（用while和do while实现）
+		 */
+		var a=1;
+		var sum=0
+		while(a<=100){
+			if(a%3==0){
+				sum+=a;
+			}
+			
+			a++;
+		}
+		console.log(sum);
+
+		 do{
+		 	if(a%3==0){
+		 		sum+=a;			
+		 	}
+		 	a++;
+		 }while(a<=100);
+		 console.log(sum);
+
+
+	</script>
+</body>
+</html>

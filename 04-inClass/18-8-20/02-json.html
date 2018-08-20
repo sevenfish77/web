@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+</head>
+<body>
+
+<script>
+//    var obj = {};
+//    for (var i = 0; i < 10; i++) {
+//        obj[i] = i * 2;
+//    }
+//    for(var key in obj) {
+//        console.log(key + "==" + obj[key]);
+//    }
+
+//    var json={
+//        "name":"qq",
+//        "age":20,
+//        "sex":"男"
+//    };
+//    for(var key in json){
+////        console.log(key+"=="+json[key]);
+//        console.log(json[key]);
+//    }
+
+    //例子2
+    var obj={
+        name:"小明"
+    };
+    function f2(obj2){
+        obj2.name="小红";
+    }
+    console.log(obj.name);//小明
+
+    f2(obj);
+    console.log(obj.name); //小红
+
+</script>
+</body>
+</html>

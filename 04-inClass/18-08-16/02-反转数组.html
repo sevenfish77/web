@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>反转数组</title>
+</head>
+<body>
+	<script>
+		/*案例1：将[10，20，30，40，50]反转*/
+		//思路
+		//创建数组[10，20，30，40，50]
+		//用for循环的方法实现索引，找到对应的数据
+		//用和变量仙宫的方法进行交换
+		//输出
+		 var array=[10,20,30,40,50];
+		 for(var i=0;i<=array.length/2;i++){
+		 	var temp=array[i];
+		 	array[i]=array[array.length-1-i];
+		 	array[array.length-1-i]=temp;
+		 }
+		 console.log(array);
+
+		//案例2：提示用户输入班级人数，求总成绩，平均值，最高分，最低分
+		var num = Number(prompt("请您输入总人数"));
+		var array=[];
+		var sum=0;
+		
+
+		for(i=0;i<num;i++){
+
+			var cj=prompt("请您输入"+(i+1)+"次成绩");
+			array[i]=cj;
+
+			var fs=parseFloat(array[i]);
+			//总数
+			sum +=fs;
+			//平均分
+			var aver=sum/num; 
+			
+		}
+		//输出数组
+		console.log(array);
+		document.write(array);
+
+		//总数
+		console.log(sum);
+
+		//平均分
+		console.log(aver);
+
+
+		//最高分
+		var max = array[0];
+		for(i=1;i<=num;i++){
+			//最高分
+			if(array[i]>max){
+				max=array[i];
+			}
+			
+		}
+		//最高分	
+		console.log("big："+max);
+
+
+		//最低分
+		var min = array[0];
+		for(i=1;i<=num;i++){
+			//最低分
+			if (array[i] < min){ 
+			min = array[i]; 
+			} 
+		}		
+		//最低分	
+		console.log("min: "+min);
+
+
+
+	</script>
+</body>
+</html>

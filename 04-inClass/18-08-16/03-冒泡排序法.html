@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>冒泡排序法</title>
+</head>
+<body>
+	<script>
+		 /*将10，50，30，40，20*/
+		 var temp;
+		 var arr=[10,50,30,40,20];
+		 for(i=0;i<5;i++){		//i表示循环的次数
+		 	for(j=0;j<5;j++){
+		 		//j表示数字下标 
+		 		if(arr[j]>arr[j+1]){	//当发现前一个数比后一个数大
+		 		temp=arr[j];		//将arr[j]的值赋给一个中间数
+		 		arr[j]=arr[j+1];	
+		 		arr[j+1]=temp;	
+		 		}
+		 	}
+		 }
+		 console.log(arr);
+
+	</script>
+</body>
+</html>

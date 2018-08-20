@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>for循环</title>
+</head>
+<body>
+	<script>
+		/*案例1：输出10次“你好！我好！大家好！”*/
+		for(var i=1;i<=10;i++){
+			console.log("你好！我好！大家好,hao");
+		}
+		/*案例2：求1-100之间数字和*/
+		var sum=0;
+		for(var i=0;i<=100;i++){
+			sum+=i;
+		}
+		console.log(sum);
+		/*案例3：求1-100之间所有偶数和——2550*/
+		var sum=0;
+		for(var i=0;i<=100;i++){
+			if(i%2==0){
+				sum+=i;	
+			}	
+		}
+		console.log(sum);
+		/*案例4：求1-100之间所有奇数和——2500*/
+		var sum=0;
+		for(var i=0;i<=100;i++){
+			if(i%2!==0){
+				sum+=i;	
+			}	
+		}
+		console.log(sum);
+		/*案例5：求1-100之间所有能被3整除数字和——1683*/
+		var sum=0;
+		for(var i=0;i<=100;i++){
+			if(i%3==0){
+				sum+=i;	
+			}	
+		}
+		console.log(sum);
+		/*案例6：求1-100之间所有能被7整除数字和——735*/
+		var sum=0;
+		for(var i=0;i<=100;i++){
+			if(i%7==0){
+				sum+=i;	
+			}	
+		}
+		console.log(sum);
+	</script>
+</body>
+</html>

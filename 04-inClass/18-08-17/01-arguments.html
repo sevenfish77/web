@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>arguments</title>
+</head>
+<body>
+
+    <script>
+       function f1(){
+            //获取的是函数在调用的时候传入了几个参数
+           console.log(arguments.length); //length也可以代表个数
+           console.log(arguments);
+        }
+        f1(10,20);
+        //案例1：计算2个数字的和
+        //案例2：计算2个数字的和
+        //案例3：计算n个数字的和
+        function he(){
+            var sum=0;
+            for(var i=0;i<arguments.length;i++){
+                sum+=arguments[i];
+            }
+            return sum;
+        }
+        console.log( he(20,30,40,50));
+    </script>
+</body>
+</html>
