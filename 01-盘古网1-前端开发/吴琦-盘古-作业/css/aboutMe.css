@@ -23,7 +23,6 @@
 		.center-box {
 			width: 1000px;
 			height: 775px;
-			
 			margin: 0 auto;
 			margin-top: 30px;
 		}
@@ -108,13 +107,13 @@
 					margin-left: -4px;
 					color:#5a5a5a;
 					font:12px/0 微软雅黑;
-					/*小三角部分*/
-				
-　				 /*　appearance: none;
-					
-					-webkit-appearance:none;*/
+					/*!*小三角部分*!*/
+				/**/
+/*　					 appearance: none;*/
+					/**/
+					/*-webkit-appearance:none;*/
 					/*background: url(../images/xsj.png) no-repeat scroll right center transparent;*/
-					padding-right: 5px; 
+					padding-right: 5px;
 
 
 				}

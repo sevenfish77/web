@@ -1,0 +1,17 @@
+.center {
+    height: 1260px;
+    background: #fafafa;
+    border-bottom: 1px #dddddd solid;
+    border-top: 1px #ff3253 solid;
+}
+    .centerBox {
+        height: 1150px;
+        margin-top: 30px;
+    }
+
+        .centerBox-right{
+            height: 1150px;
+            width: 950px;
+            background: #fff;
+            border: 1px #dcdcdc solid;
+        }
