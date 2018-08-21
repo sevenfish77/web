@@ -15,3 +15,15 @@
             background: #fff;
             border: 1px #dcdcdc solid;
         }
+            .centerBox-right-main {
+                width: 860px;
+                margin: 0 auto;
+                background: #000;
+                margin-top: 66px;
+            }
+                .centerBox-right-main-top {
+                    width: 700px;
+                    height: 50px;
+                    border-top:1px #e8e8e8 solid;
+
+                }

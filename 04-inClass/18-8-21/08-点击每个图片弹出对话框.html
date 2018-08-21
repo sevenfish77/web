@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击每个图片弹出对话框</title>
+</head>
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<body>
+<img src="images/active1.png" alt="">
+<img src="images/active1.png" alt="">
+<img src="images/active1.png" alt="">
+<img src="images/active1.png" alt="">
+<script>
+    //根据标签名字获取图片标签，分别注册点击事件
+
+    //循环遍历数组，过去每个图片标签，注册点击事件，添加事件处理函数
+    var Obj=document.getElementsByTagName("img");
+
+    for(var i=0;i<Obj.length;i++){
+        Obj[i].onclick=function(){
+            alert("picture");
+        };
+    }
+
+
+</script>
+</body>
+</html>

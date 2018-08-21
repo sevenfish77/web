@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮修改图片</title>
+</head>
+<body>
+<input type="button" value="修改图片" id="btn">
+<img src="images/active1.png" alt="" id="im">
+<script>
+    document.getElementById("btn").onclick=function(){
+        document.getElementById("im").src="images/active3.png";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮,修改按钮的value属性</title>
+</head>
+<body>
+<input type="button" value="按钮修改前" id="btn" onclick="change">
+<script>
+    //在某个元素的事件中，自己的事件中的this就是当前这个元素对象
+    document.getElementById("btn").onclick=function(){
+        this.value="按钮修改后";
+    }
+
+</script>
+</body>
+</html>

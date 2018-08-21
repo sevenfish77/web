@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮选择菜单</title>
+</head>
+<body>
+
+<input type="button" value="点菜" id="btn">
+<select name="" id="ss">
+    <option value="1" >ww</option>
+    <option value="2">wu</option>
+    <option value="3">ee</option>
+    <option value="4">ll</option>
+    <option value="5" id="op1">gg</option>
+</select>
+
+<script src="javascript/common.js"></script>
+<script>
+    $get("btn").onclick=function(){
+        //点击按钮选择菜
+        $get("op1").selected=true;
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮修改a标签地址和热点文字</title>
+</head>
+<body>
+<input type="button" value="按钮" id="button">
+<a href="https://www.baidu.com/" id="lianjie">百度</a>
+<script>
+    //根据id获取按钮，注册点击事件，添加事件处理函数
+    document.getElementById("button").onclick=function(){
+        //根据id获取超链接，设置href属性
+        document.getElementById("lianjie").href="https://www.sina.com.cn/";
+        //根据id获取超链接，设置文本内容
+        document.getElementById("lianjie").innerText="新浪";
+    }
+</script>
+</body>
+</html>

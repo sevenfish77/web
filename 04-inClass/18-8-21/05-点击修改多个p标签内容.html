@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击修改多个p标签内容</title>
+</head>
+<body>
+<input type="button" value="修改多个p标签" id="btn">
+<div id="div1">
+    <p>早上好</p>
+    <p>中午好</p>
+    <p>晚上好</p>
+</div>
+
+<script>
+//    document.getElementById("button").onclick=function(){
+//        document.getElementById("p1").innerText="大家好，才是真的好";
+//        document.getElementById("p2").innerText="大家好，才是真的好";
+//        document.getElementById("p3").innerText="大家好，才是真的好";
+//    }
+
+    //老师代码
+    document.getElementById("btn").onclick=function(){
+        //根据变迁名字获取
+        var pObjs=document.getElementsByTagName("p");
+        var pObjs=document.getElementById("div1").getElementsByTagName("p");
+
+        //循环遍历这个数组
+        for(var i=0;i<pObjs.length;i++){
+            //将p标签设置文字
+            pObjs[i].innerText="我们都是p";
+        }
+    };
+</script>
+</body>
+</html>

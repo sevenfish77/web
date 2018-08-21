@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>点击事件-弹出弹窗</title>
+</head>
+<style>
+    /*img {*/
+        /*width: 100px;*/
+        /*height: 100px;*/
+
+    /*}*/
+</style>
+<body>
+<input type="button" id="anniu" value="按钮">
+<img src="" alt="" id="tu">
+<script>
+    //案例效果：点击按钮显示图片
+    document.getElementById("anniu").onclick=function(){
+        var img=document.getElementById('tu');//获取img对象
+        img.src="images/active1.png";//把要显示的图片地址赋给img对象src就行了
+
+        //设置图片的大小
+        img.width="300";
+        img.height="300";
+    };
+</script>
+</body>
+</html>

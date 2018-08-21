@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击超链接切换图片</title>
+</head>
+<body>
+<a href="images/active1.png" id="one"><img src="images/active3.png" alt="" id="two"></a>
+<script>
+    //点击图片标签，设置图片标签的src路径为超链接中大图的路径
+    document.getElementById("two").onclick=function(){
+        this.src=document.getElementById("one").href;
+        return false;
+    };
+</script>
+</body>
+</html>

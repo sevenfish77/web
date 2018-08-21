@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击修改图片alt属性,title属性</title>
+</head>
+<body>
+<input type="button" id="btn" value="修改">
+<img src="images/active1.png" alt="哈哈，图片1" title="嘎嘎，图片1">
+<script>
+    document.getElementById("btn").onclick=function(){
+        //返回的是一个伪数组（？？？）
+        var Obj=document.getElementsByTagName("img");
+        Obj[0].title="修改后，嘎嘎，图片2";
+        Obj[0].alt="修改后，哈哈，图片2";
+    };
+//    document.getElementById("btn").onclick=function(){
+//
+//    }
+</script>
+</body>
+</html>

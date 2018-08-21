@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮修改所有文本框的值</title>
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+<div id="div">
+    <input type="text" value="空"><br>
+    <input type="text" value="空"><br>
+    <input type="text" value="空"><br>
+</div>
+<script>
+    //获取所有文本框
+    //判断是不是按钮
+    document.getElementById("btn").onclick=function(){
+        //获取所有文本框
+        var inputs=document.getElementById("div").getElementsByTagName("input");
+        //for循环
+        for(var i=0;i<inputs.length;i++){
+            //判断该元素是否为按钮
+            if(inputs[i].type!="button"){
+                inputs[i].value="这里是文本内容";
+            }
+        }
+    }
+</script>
+</body>
+</html>

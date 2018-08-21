@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击事件-弹出弹窗</title>
+</head>
+<body>
+
+
+<input type="button" value="弹窗" onclick="f1()">
+<input type="button" value="222"  id="click">
+
+<script>
+    //dom操作
+
+    //案例1：点击按钮，弹出窗口
+    function f1(){
+        alert("你好,这个是弹窗");
+    }
+    //先有按钮，才能获取，获取之后才能主要事件
+    //根据id属性的值从文档中获取这个元素
+    //为当前的这个按钮元素，注册点击事件，通过匿名函数调用事件
+//    var input=document.getElementById("click");
+//    input.onclick =function(){
+//        alert(你好，我是按钮1);
+//    };
+    //优化版
+    document.getElementById("click").onclick=function(){
+        alert("你好，我是按钮2");
+    };
+
+    //案例2：
+</script>
+</body>
+</html>

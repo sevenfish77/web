@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮修改ｐ标签内容</title>
+</head>
+<body>
+<input type="button" value="修改" id="button">
+<p id="pp">你好阿</p>
+<script>
+    document.getElementById("button").onclick=function(){
+        //innerText属性可以修改文本内容
+        document.getElementById("pp").innerText="你好啊！！！";
+    }
+</script>
+</body>
+</html>
