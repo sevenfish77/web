@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-美女相册</title>
+</head>
+<style>
+    body{
+        background: #eee;
+    }
+    ul,li{
+        list-style:none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .all {
+        width: 1000px;
+        height: 1000px;
+        margin-left: 200px;
+
+    }
+        .small {
+            width:97px;
+        }
+.big{
+    width: 400px;
+    height: 290px;
+    text-align:center;
+
+}
+    .big img{
+        display:inline-block;
+        width: 400px;
+        height: 250px;
+        text-align:center;
+        background: darkred;
+    }
+
+</style>
+<body>
+<div class="all">
+    <h1>美女画廊</h1>
+    <ul >
+        <li id="small">
+            <a href="images/1.jpg" title="美女1" ><img class="small" src="images/1-small.jpg"  alt="美女1"></a>
+            <a href="images/2.jpg" title="美女2" ><img class="small" src="images/2-small.jpg"  alt="美女2"></a>
+            <a href="images/3.jpg" title="美女3" ><img class="small" src="images/3-small.jpg"  alt="美女3"></a>
+            <a href="images/4.jpg" title="美女4" ><img class="small" src="images/4-small.jpg"  alt="美女4"></a>
+        </li>
+    </ul>
+
+    <div class="big">
+        <img src="" alt="" value="400x250" id="big">
+        <p id="zi">请选择一张图片</p>
+    </div>
+</div>
+
+<script src="js/common.js"></script>
+<script>
+    var Objs=my$("small").getElementsByTagName("a");
+    for(var i=0;i<Objs.length;i++){
+        Objs[i].onclick=function(){
+            my$("big").src=this.href;
+            my$("zi").innerText=this.title;
+
+            return false;
+        }
+
+    }
+</script>
+</body>
+</html>

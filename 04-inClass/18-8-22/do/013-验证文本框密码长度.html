@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证文本框密码长度</title>
+</head>
+<body>
+<input type="text" id="txt" >
+<script src="js/common.js"></script>
+<script>
+    //注册失去焦点的事件
+    my$("txt").onblur=function(){
+        if(this.value.length>6 && this.value.length<10){
+            this.style.backgroundColor="yellow";
+        }else{
+            this.style.backgroundColor="red";
+            alert("密码输入错误");
+        }
+    }
+</script>
+</body>
+</html>

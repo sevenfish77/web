@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-鼠标经过高亮显示</title>
+</head>
+<body>
+<ul id="uu">
+    <li>hahaha</li>
+    <li>hahaha</li>
+    <li>hahaha</li>
+    <li>hahaha</li>
+</ul>
+<script>
+var Objs=document.getElementById("uu").getElementsByTagName("li");
+    for(var i=0;i<Objs.length;i++){
+        //注册鼠标进入事件
+        Objs[i].onmouseover=function(){
+            this.style.backgroundColor="red"; //注意this的使用
+        };
+        //注册鼠标离开事件
+        Objs[i].onmouseout=function(){
+            this.style.backgroundColor="";
+        }
+    }
+</script>
+</body>
+</html>

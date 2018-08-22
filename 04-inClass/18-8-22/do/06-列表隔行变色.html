@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-列表隔行变色</title>
+</head>
+<body>
+<button id="btn">隔行变色</button>
+<ul id="uu">
+    <li>1111</li>
+    <li>2222</li>
+    <li>1111</li>
+    <li>2222</li>
+    <li>1111</li>
+    <li>2222</li>
+</ul>
+<script>
+    my$("btn").onclick=function(){
+        var Objs=document.getElementById("uu").getElementsByTagName("li");
+        for(var i=0;i<Objs.length;i++){
+            if(i%2==0){
+                Objs[i].style.backgroundColor="yellow";
+            }else{
+                Objs[i].style.backgroundColor="red";
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

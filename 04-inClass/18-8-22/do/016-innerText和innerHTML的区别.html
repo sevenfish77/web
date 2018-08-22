@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerText和innerHTML的区别</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        border: 1px red solid;
+    }
+</style>
+<body>
+<button id="btn1">显示效果</button>
+<div id="dv">HAHAAHH</div>
+<script src="js/common.js"></script>
+<script>
+    document.getElementById("btn1").onclick=function(){
+       // my$("dv").innerText="改变";
+//       my$("dv").innerHTML="改变";
+
+//       my$("dv").innerText="<p>p标签</p>"; //会将文字全部打出
+      //  my$("dv").innerHTML="<p>p标签</p>"; //会将样式打出来
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerText和textContent</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background: palevioletred;
+    }
+</style>
+<body>
+<button id="btn">设置值</button>
+<div id="the">
+  我即将改变  
+</div>
+<script src="js/common.js"></script>
+<script>
+    my$("btn").onclick=function(){
+        my$("the").textContent="this is div标签";
+        my$("dv").innerText = "啊,这是div";
+    }
+</script>
+</body>
+</html>

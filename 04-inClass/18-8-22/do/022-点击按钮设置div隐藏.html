@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮设置div隐藏</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        background: hotpink;
+    }
+</style>
+<body>
+<button id="yin">隐藏</button>
+<button id="chu">显示</button>
+<div id="dv"></div>
+<script src="js/common.js"></script>
+<script>
+    my$("yin").onclick=function(){
+        my$("dv").style.display="none"; //隐藏
+    }
+    my$("chu").onclick=function(){
+        my$("dv").style.display="block"; //显示
+    }
+</script>
+</body>
+</html>

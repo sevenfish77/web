@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页开关灯</title>
+</head>
+<style>
+    .cls{
+        background: pink;
+    }
+</style>
+<body>
+<body id="bd"></body>
+<button id="btn">开/关灯</button>
+<script src="js/common.js"></script>
+<script>
+    //法1；
+//    my$("btn").onclick=function(){
+//        //三元运算：若body的颜色和默认body的颜色相等，则给body .cls的样式；否则就给body恢复默认样式。
+//        document.body.className= (document.body.className!= "cls") ?"cls":"";  //三目运算式
+//    };
+    //法2： /////存在错误，未解决
+     my$("btn").onclick=function(){
+        if( my$("bd").style.backgroundColor=""){
+            this.style.backgroundColor="yellow";
+        }else if(my$("bd").style.backgroundColor="yellow"){
+            this.style.backgroundColor="transparent";
+        }
+    };
+
+</script>
+</body>
+</html>

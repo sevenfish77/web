@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-点击按钮禁用文本框</title>
+</head>
+<body>
+<input type="button" id="btn" value="禁用'">
+<input type="text" value="文本框" id="text">
+<script>
+    document.getElementById("btn").onclick=function(){
+        var Obj=document.getElementById("text");
+        //根据id获取文本框,设置disabled属性
+        //disabled属性可设置文本框不可用。
+        Obj.disabled=true;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>removeAttribute</title>
+</head>
+<style>
+    .bg {
+        background: palevioletred;
+    }
+</style>
+<body>
+<input type="text" class="bg" id="yi">
+<script src="js/common.js"></script>
+<script>
+    my$("yi").onclick=function(){
+        this.removeAttribute("class");
+    }
+</script>
+</body>
+</html>

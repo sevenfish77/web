@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮显示和隐藏div</title>
+</head>
+<style>
+   div {
+       width: 200px;
+       height: 200px;
+       background: hotpink;
+   }
+
+</style>
+<body>
+<button id="btn">隐藏</button>
+<div id="dv"></div>
+<script src="js/common.js"></script>
+<script>
+    my$("btn").onclick=function(){
+        //对按钮上的值进行判断
+        if(this.innerText=="隐藏"){
+            my$("dv").style.display="none";
+            this.innerText="显示";
+        }else if(this.innerText=="显示"){
+            my$("dv").style.display="block";
+            this.innerText="隐藏";
+        }
+    }
+</script>
+</body>
+</html>

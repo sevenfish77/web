@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义属性引入-getAttribute</title>
+</head>
+<body>
+<ul id="uu">
+    <a href="#"><li score="100">li1</li></a>
+    <a href="#"><li score="200">li2</li></a>
+    <a href="#"><li score="300">li3</li></a>
+    <a href="#"><li score="400">li4</li></a>
+</ul>
+<script src="js/common.js"></script>
+<script>
+   var list=my$("uu").getElementsByTagName("li");
+    for(var i=0;i<list.length;i++){
+        list[i].onclick=function(){
+            alert(this.getAttribute("score"));
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08-显示和隐藏二维码</title>
+</head>
+<style>
+    .small {
+        width: 50px;
+        height: 50px;
+        background: url(images/bgs.png) no-repeat -159px -51px;
+        position: fixed;
+        right: 10px;
+        top: 40%;
+    }
+    .big {
+        position: absolute;
+        top: 0;
+        left: -150px;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+</style>
+<body>
+<div class="small" id="small">
+    <a href="#" class="small"></a>
+    <div class="big hide" id="big">
+        <img src="images/456.png" alt="">
+    </div>
+</div>
+
+<script>
+    var Obj=document.getElementById("small").getElementsByTagName("a")[0];
+    Obj.onmouseover=function(){
+        document.getElementById("big").className="big show";
+    };
+
+    Obj.onmouseout=function(){
+        document.getElementById("big").className="big hide";
+    };
+</script>
+</body>
+</html>

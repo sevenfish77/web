@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>010-根据类样式的名字来获取元素</title>
+</head>
+<style>
+    .cls {
+        background: darkred;
+    }
+</style>
+<body>
+<button id="btn">样式改变</button>
+<p class="cls">变化</p>
+<p>不变化</p>
+<p class="cls">变化</p>
+<p>不变化</p>
+
+<script>
+    //点击按钮设置应用cls类样式的标签的背景颜色为红色
+    //getElementsByClassName();
+    document.getElementById("btn").onclick=function(){
+
+        var pp=document.getElementsByClassName("cls");
+        for(var i=0;i<pp.length;i++){
+            pp[i].style.backgroundColor="yellow";
+        }
+    }
+
+</script>
+</body>
+</html>

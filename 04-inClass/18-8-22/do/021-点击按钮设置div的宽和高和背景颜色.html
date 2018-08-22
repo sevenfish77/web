@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮设置div的宽和高和背景颜色</title>
+</head>
+<body>
+<button id="btn">设置样式</button>
+<div id="dv"></div>
+<script src="js/common.js"></script>
+<script>
+    my$("btn").onclick=function(){
+        my$("dv").style.width="200px";  //必须加上单位px
+        my$("dv").style.height="200px";
+        my$("dv").style.backgroundColor="yellow";
+    };
+</script>
+</body>
+</html>

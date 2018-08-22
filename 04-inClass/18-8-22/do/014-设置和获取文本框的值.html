@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置和获取文本框的值</title>
+</head>
+<body>
+<button id="btn">赋值</button>
+<input type="text" value="即将赋值">
+<script>
+    document.getElementById("btn").onclick=function(){
+        console.log(document.getElementsByTagName("input")[0].value);
+        alert(document.getElementsByTagName("input")[0].value);
+    };
+</script>
+</body>
+</html>

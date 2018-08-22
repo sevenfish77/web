@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-点击按钮修改列表背景颜色</title>
+</head>
+<body>
+<button id="btn">修改</button>
+<ul id="ul">
+    <li>你好啊</li>
+    <li>我好啊</li>
+    <li>她好啊</li>
+    <li>它好啊</li>
+</ul>
+<script>
+    document.getElementById("btn").onclick=function(){
+//        var Objs=document.getElementById("ul").getElementsByTagName("li");
+//        for(var i=0;i<Objs.length;i++){
+//            Objs[i].style.backgroundColor="red";
+//        }
+        document.getElementById("ul").style.backgroundColor="yellow";
+    }
+</script>
+</body>
+</html>

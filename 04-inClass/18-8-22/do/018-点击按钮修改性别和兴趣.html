@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮修改性别和兴趣</title>
+</head>
+<body>
+<button id="btn">选择</button>
+<input type="checkbox">你好
+<input type="checkbox" >我好
+<input type="checkbox">他好
+<input type="checkbox" id="all">大家好
+
+<script src="js/common.js"></script>
+<script>
+    my$("btn").onclick=function(){
+        my$("all").checked=true;
+    }
+</script>
+</body>
+</html>

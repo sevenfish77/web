@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-阻止超链接跳转</title>
+</head>
+<body>
+<a href="https://www.baidu.com/" id="link">百度</a>
+<script>
+    document.getElementById("link").onclick=function(){
+//        this.href=disabled;//错误写法，不可实现
+        alert("被阻止了");
+        //可阻止超链接跳转
+        return false;
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模拟搜索框</title>
+</head>
+<body>
+<input type="text" value="这是搜索框" id="txt">
+<script>
+    //注册获取到焦点的事件
+    document.getElementById("txt").onfocus=function(){
+        if(this.value=="这是搜索框"){
+            this.value="";//清空文本框
+        }
+    }
+
+    //注册失去焦点的事件
+    document.getElementById("txt").onblur=function(){
+        if(this.value.length==0){
+            this.value="这是搜索框";
+        }
+    }
+</script>
+</body>
+</html>

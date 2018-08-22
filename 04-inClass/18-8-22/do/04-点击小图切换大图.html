@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-点击小图切换大图</title>
+</head>
+<body>
+<!--<a href="images/1-small.jpg" id="small">小图切换</a>-->
+<!--<img src="images/1-small.jpg" alt="" >-->
+<!--<script>-->
+    <!--//存在问题-->
+<!--//    document.getElementById("small").onclick=function(){-->
+<!--////        this.innerText="大图 ";-->
+<!--////        this.href="images/1.jpg";-->
+<!--////-->
+<!--////        return false;-->
+<!--//    }-->
+    <!---->
+<!--</script>-->
+
+    <!--正确方法-->
+<a href="images/1.jpg" id="small"><img src="images/1-small.jpg" alt=""></a>
+<img src="" alt="" id="big">
+<script src="js/common.js"></script>
+<script >
+    my$("small").onclick=function(){
+        my$("big").src=this.href;
+        //点击后不会以图片形式出现
+        return false;
+    };
+</script>
+</body>
+</html>
