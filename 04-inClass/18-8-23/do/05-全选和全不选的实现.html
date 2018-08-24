@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选和全不选实现</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        margin: 100px auto 0;
+    }
+    table {
+        border-spacing: 0;//border之间的间距
+    }
+    th,td {
+        border:1px #fff solid;
+    }
+     th{
+        background: dodgerblue;
+         width: 100px;
+         text-align:center;
+
+    }
+    td {
+        background: #eee;
+        width: 100px;
+        text-align:center;
+    }
+</style>
+<body>
+<div class="box">
+    <table border="0">
+        <thread>
+            <tr>
+                <th><input type="checkbox" id="all"></th>
+                <th>菜名</th>
+                <th>饭店</th>
+            </tr>
+        </thread>
+
+        <tbody id="tb">
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>11</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>11</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>11</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>11</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="js/common.js"></script>
+<script>
+    //获取全选的复选框
+    var all=my$("all");
+    //获取到所有单个选择框
+    var tb=my$("tb").getElementsByTagName("input");
+    //点击这个多选框，tbody中的选框被设置成选中状态
+    all.onclick=function(){
+        //循环遍历所有选框
+        for(var i=0;i<tb.length;i++){
+            tb[i].checked=this.checked;
+        }
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮创建一个表格</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+    }
+</style>
+<body>
+<button id="btn">创建</button>
+<div id="dv"></div>
+<script src="js/common.js"></script>
+<script>
+    var arr=[
+        {name:"百度",href:"http://www.baidu.com"},
+        {name:"谷歌",href:"http://www.google.com"},
+        {name:"优酷",href:"http://www.youku.com"},
+        {name:"土豆",href:"http://www.tudou.com"},
+        {name:"快播",href:"http://www.kuaibo.com"},
+        {name:"爱奇艺",href:"http://www.aiqiyi.com"}
+    ];
+    //点击按钮创建表格
+    my$("btn").onclick=function(){
+        var tableObj=document.createElement("table");
+        tableObj.border="1px";
+        tableObj.cellSpacing="0";
+        tableObj.cellPadding="0";
+        my$("dv").appendChild(tableObj);
+
+        //创建行,把行加入到table中
+        for(var i=0;i<arr.length;i++){
+            //每个对象
+            var dt=arr[i];
+            var trObj=document.createElement("tr");
+            tableObj.appendChild(trObj);
+
+            //创建第一个列,然后加入到行中
+            var td1=document.createElement("td");
+            td1.innerText=dt.name;//将dt的name属性赋值给dt的文本
+            trObj.appendChild(td1);
+
+            //创建第2个列,然后加入到行中
+            var td2=document.createElement("td");
+            td2.innerText=dt.name;
+            trObj.appendChild(td2);
+
+        }
+
+    }
+
+</script>
+</body>
+</html>

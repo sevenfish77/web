@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素相关的方法</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+    }
+</style>
+
+<body>
+<button id="btn1">添加按钮</button>
+<button id="btn2">干点第一个元素</button>
+<button id="btn3">干掉所有元素</button>
+<div id="dv"></div>
+<script src="js/common.js"></script>
+<script>
+    var i=0;
+    my$("btn1").onclick=function(){
+        i++;
+        var obj=document.createElement("input");
+        obj.type="button";
+        obj.value="按钮"+i;
+        //追加子元素
+//        my$("dv").appendChild(obj);  //按顺序往后面添加
+        //把新的子元素插入到第一个子元素的前面
+       my$("dv").insertBefore(obj,my$("dv").firstElementChild);
+        //
+//        my$("dv").replaceChild();
+    };
+
+    my$("btn2").onclick=function(){
+        //移除父级元素中第一个子级元素
+        my$("dv").removeChild(my$("dv").firstElementChild);
+    };
+
+    my$("btn3").onclick=function(){
+        //移除所有元素
+        //判断父级元素中有没有第一个子元素
+        while(my$("dv").firstElementChild){
+            my$("dv").removeChild(my$("dv").firstElementChild);
+        }
+    };
+</script>
+</body>
+</html>

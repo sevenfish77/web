@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮添加图片</title>
+</head>
+<style>
+    div {
+        width: 400px;
+        height: 400px;
+        background: palevioletred;
+    }
+</style>
+<body>
+<button id="btn">添加图片</button>
+<div id="dv"></div>
+<script src="js/common.js"></script>
+<script>
+    my$("btn").onclick=function(){
+        my$("dv").innerHTML="<img src='images/1.jpg' alt='tu'/>";
+    }
+</script>
+</body>
+</html>
