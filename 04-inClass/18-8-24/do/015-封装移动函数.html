@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封装移动函数</title>
+</head>
+<style>
+    div {
+        width: 100px;
+        height: 30px;
+        background: orangered;
+        margin-top: 30px;
+        position: absolute;
+    }
+</style>
+<body>
+<button id="btn1">移动400px</button>
+<button id="btn2">移动800px</button>
+<div id="dv"></div>
+<script src="js/common.js"></script>
+<script>
+    //div要移动,要脱离文档流---position:absolute
+    //如果样式的代码是在style的标签中设置,外面是获取不到
+    //如果样式的代码是在style的属性设置,外面是可以获取
+    //获取div的当前位置
+    //console.log(my$("dv").offsetLeft);
+
+    //点击第一个按钮移动到400px
+    my$("btn1").onclick=function(){
+        animate(my$("dv"),400);//annimate(元素，目标)
+    };
+    my$("btn2").onclick=function(){
+        animate(my$("dv"),800);
+    };
+
+    //一个动画函数
+    function animate(element,target){
+        //先清理定时器
+        // clearInterval(element.timeId);
+        //定时器
+        element.timeId=setInterval(function(){
+            //获取当前位置
+            var now=element.offsetLeft;//数字类型
+            //设置每次移动的像素值
+            var step=10;
+            //如果now小于目标，step为正；now大于目标，step为负。
+            step=now<target?step:-step;
+            //每次移动移动后，now的值
+            now+=step;
+            //判断当前移动后的位置是否到达目标位置
+            if(Math.abs(target - now) > Math.abs(step)){
+                element.style.left=now+"px";
+            }else{
+                //清理定时器
+                clearInterval(element.timeId);
+                element.style.left=target+"px";
+            }
+        },20);
+    };
+</script>
+</body>
+</html>

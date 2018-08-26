@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置div的宽度</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 50px;
+        background: darkslateblue;
+        margin-top: 30px;
+        border-radius: 15px;
+    }
+</style>
+<body>
+<button id="btn">变宽</button>
+<div id="dv"></div>
+<script src="js/common.js"></script>
+<script>
+    my$("btn").onclick=function(){
+        var width=200;//给宽度为200px的div，设置一个变量赋值为200
+        var timeId=setInterval(function(){
+            width+=10;  //每100毫秒后，会增加10px的宽度
+            if(width==400){
+                //若宽度到达400，则清除定时器
+                clearInterval(timeId);
+            }
+            my$("dv").style.width=width+"px"; //div的样式——宽度
+        },100); //这个时间是给定时器一个完成事件的一个时间期限
+    };
+</script>
+</body>
+</html>

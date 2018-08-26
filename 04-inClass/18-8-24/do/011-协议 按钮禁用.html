@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>协议 按钮禁用</title>
+</head>
+<body>
+<textarea name="textare" id="" cols="30" rows="10">
+    这是个按钮协议，定时按钮出现“同意”事件的案例。
+</textarea>
+<input type="button" id="btn">
+<script src="js/common.js"></script>
+<script>
+    var time=5;
+    var theId=setInterval(function(){
+
+        time--;
+        my$("btn").value="请仔细阅读协议"+time+"";
+        if(time<=0){
+            //停止计时器
+            clearInterval(theId);
+            //按钮可以被点击了
+            my$("btn").disabled=false;
+            my$("btn").value="同意";
+        }
+    },1000);
+</script>
+</body>
+</html>

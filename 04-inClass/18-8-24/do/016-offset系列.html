@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>offset系列</title>
+</head>
+<body>
+
+<script>
+    //在style标签中设置的样式属性获取不到
+    //style属性中设置的样式属性是可以获取到的
+    //获取元素的样式,下面的方式废了
+    //console.log(my$("dv1").style.width);
+    //console.log(my$("dv1").style.height);
+
+    //以后获取元素的宽和高,应该使用offset系列来获取
+    /*
+     *
+     * offsetWidth:获取元素的宽
+     * offsetHeight:获取元素的高
+     * offsetLeft:获取元素距离左边位置的值
+     * offsetTop:获取元素距离上面位置的值
+     *
+     * */
+
+    //没有脱离文档流:
+    /*
+     *
+     * offsetLeft:父级元素margin+父级元素padding+父级元素的border+自己的margin
+     *
+     *
+     * 脱离文档流了
+     * 主要是自己的left和自己的margin
+     * */
+    //子级元素的
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-绑定事件的区别</title>
+</head>
+<body>
+<input type="button" value="按钮" id="btn"/>
+<script src="js/common.js"></script>
+
+<script>
+    my$("btn").addEventListener("click",function(){
+        console.log("addEventListener");
+    },false);
+
+    my$("btn").attachEvent("onclick",function(){
+        console.log("attacheEvent");
+    });
+</script>
+</body>
+</html>

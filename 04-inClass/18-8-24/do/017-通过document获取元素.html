@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过document获取元素</title>
+</head>
+<style>
+    img {
+        position: absolute;
+    }
+</style>
+<body>
+<img src="images/tianshi.gif" alt="" id="im">
+<script src="js/common.js"></script>
+<script>
+    //获取body
+//    console.log(document.body);//获取的是元素--标签
+//    //获取title
+//    console.log(document.title);//标签中的值
+//    document.title="嘎嘎去";
+//    //获取html
+//    console.log(document.documentElement);
+
+    //鼠标在页面中移动,图片跟着鼠标移动
+    document.onmousemove=function(e){
+        //鼠标的移动的横纵坐标
+            //可视区域的横坐标
+            //可视区域的纵坐标
+        my$("im").style.left= e.clientX+"px";
+        my$("im").style.top= e.clientY+"px";
+    }
+
+</script>
+</body>
+</html>

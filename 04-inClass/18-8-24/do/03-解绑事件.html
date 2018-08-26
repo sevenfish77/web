@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解绑事件</title>
+</head>
+<body>
+<input type="button" value="小明" id="btn1"/>
+<input type="button" value="干掉第一个按钮的事件" id="btn2"/>
+<script src="js/common.js"></script>
+<script>
+    //方法1：
+    //1 对象.on事件名字=事件处理函数----绑定事件
+//    my$("btn").onclick=function(){
+//        console.log("第一种点击事件");
+//    };
+//        //解绑事件
+//    my$("btn2").onclick=function(){
+//        my$("btn1").onclick=null;
+//    }
+
+
+//    //方法2：对象.removeEventListener
+//    function f1(){
+//        console.log("111");
+//    }
+//    function f2(){
+//        console.log("222");
+//    }
+//    //若是在括号里面添加f1()  f2(),只能添加一次
+//    my$("btn1").addEventListener("click",f1,false);
+//    my$("btn1").addEventListener("click",f2,false);
+//
+//    //点击第二个按钮给事件解绑
+//    //此时我们为f1()绑定的事件解绑
+//    my$("btn2").onclick=function(){
+//        ////解绑事件的时候,需要在绑定事件的时候,使用命名函数
+//        my$("btn1").removeEventListener("click",f1,false);  //若是在括号里面添加f1(),只能添加一次
+//    }
+
+
+    //方法3：对象.detachEvent——IE8中可用
+    function f1(){
+        console.log("111");
+    }
+    function f2(){
+        console.log("222");
+    }
+    //添加绑定
+    my$("btn1").attachEvent("onclick",f1);
+    my$("btn1").attachEvent("onclick",f2);
+    //接触绑定
+    my$("btn2").onclick=function(){
+        my$("btn1").detachEvent("onclick",f1);
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>另一个定时器</title>
+</head>
+<style>
+
+</style>
+<body>
+<input type="button" value="停止" id="btn">
+<script src="js/common.js"></script>
+<script>
+//   var theId=window.setInterval(function(){
+//       alert("这是一个定时器");
+//   },3000);
+//   //清理了定时器（id名为theId）
+//    window.clearInterval(theId);
+
+
+
+    //另一种定时器
+    var theId=window.setTimeout(function(){
+    alert("另一种计时器");
+    },2000);
+    ////点击这个按钮,停止这个一次性的定时器
+    my$("btn").onclick=function(){
+        clearTimeout(theId);
+    };
+
+</script>
+</body>
+</html>
