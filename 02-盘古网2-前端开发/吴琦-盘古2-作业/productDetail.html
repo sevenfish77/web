@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="css/productDetail.css">
 </head>
 <body>
+<script>
+    function addOne() {
+        var num = document.getElementById("num");
+        num.value = parseInt(num.value) + 1;
+    }
+    function deleteOne(){
+        document.getElementById("num").value=parseInt(num.value)-1;
+    }
+</script>
+
 <!--top-->
 <div class="top">
     <div class="top-box contain">
@@ -15,7 +25,7 @@
             <p>网站首页</p>
         </div>
         <div class="top-right fr ">
-            <a href="#">请登录</a>&nbsp;<a href="#">免费注册</a>
+            <a href="login.html">请登录</a>&nbsp;<a href="register.html">免费注册</a>
             <span>|</span>
             <a href="#">我的订单</a>
             <span>|</span>
@@ -57,16 +67,16 @@
     <div class="nav-right fl">
         <img src="images/hot.png" alt="">
         <li>
-            <a href="#">
+            <a href="index.html">
                 <span style="color: #ff3253;">网站首页</span>
             </a>
-            <a href="#">
+            <a href="product.html">
                 <span>产品中心</span>
             </a>
             <a href="#">
                 <span>促销活动</span>
             </a>
-            <a href="#">
+            <a href="attend.html">
                 <span>招商加盟</span>
             </a>
             <a href="#">
@@ -83,7 +93,67 @@
     </div>
 </div>
 
-
+<!--center-->
+<div class="center clearfix">
+    <div class="center1 contain clearfix">
+        <div class="center1-left fl">
+        </div>
+        <div class="center1-right fr clearfix">
+            <h1>小米盒子mini版</h1>
+            <p>全高清网络机顶盒，小到难以置信</p>
+            <div class="cx clearfix">
+                <i class="ii clearfix fl">促销价：</i><span class="ss clearfix fl">￥179.00</span>
+            </div>
+            <div class="sl">
+                数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：&nbsp;<input type="button" value="-" onclick="deleteOne()" /><input type="text" id="num" value="0" /><input type="button" value="+" onclick="addOne()" /> &nbsp;&nbsp;&nbsp;&nbsp;件
+            </div>
+            <div class="bord">
+                <a href="#" class="same buy ac fl">立即购买</a><a href="#" class="same attend ac fl"><i class="iconfont iconChe" >&#xe602;</i>加入购物车</a>
+            </div>
+            <p class="clearfix">
+                <span>保&nbsp;&nbsp;障 : </span>
+                <a href="#"><i class="iconZ">正</i>&nbsp;&nbsp;正品保障</a>
+                <a href=""><i class="iconfont iconGift">&#xe622;</i>&nbsp;&nbsp;满150包邮</a>
+                <a href=""><i class="iconSeven">7</i>&nbsp;&nbsp;7天退货 15天换货</a>
+                <a href=""><i class="iconfont iconLast">&#xe679;</i>&nbsp;&nbsp;售后服务网点</a>
+            </p>
+        </div>
+    </div>
+    <div class="center2 contain clearfix">
+        <div class="center2-left fl">
+            <div class="center2-left-one clearfix">
+                <div class="ctop"><p >热销产品</p><a href="#"><i class="iconfont icons fr" style="margin-right: 10px;"> &#xe635;</i></a>                 </div>
+                <div class="cbottom">
+                    <div class="sj" ><a href="" style="display:inline-block; margin-left: -27px;margin-top: -17px;color: #fff;">1</a></div>
+                    <img src="images/yx.png" alt="">
+                    <div class="zi fl">
+                        <h3>小米盒子</h3>
+                        <a href="#" >￥179.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center2-left-two" >
+                <div class="ctop"><p >热销产品</p><a href="#"><i class="iconfont icons fr" style="margin-right: 10px;"> &#xe635;</i></a>                 </div>
+                <div class="cbottom">
+                    <div class="sj" ><a href="" style="display:inline-block; margin-left: -27px;margin-top: -17px;color: #fff;">1</a></div>
+                    <img src="images/yx.png" alt="">
+                    <div class="zi fl">
+                        <h3>小米盒子</h3>
+                        <a href="#" >￥179.00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center2-right fr">
+            <div class="center2-right-one">
+                <span class="clear">商品详情</span>
+            </div>
+            <h1 style="color:#000;display:inline-block;margin-top: 20px;font-size: 20px;">谢霆锋王菲罕见相聚秀恩爱，却被张柏芝晒出“孕照”抢热度
+            </h1>
+            <p style="display:inline-block; margin-top: 20px;">说到目前娱乐圈中备受众人关注的情侣有谁，相信王菲与谢霆锋这一对一定是有在你们的名单以内的，日前十分繁忙的两人罕见相聚秀恩爱的画面也是引起了众人的注意，不过他们这这消息曝光后，却是被张柏芝晒出的“孕照”给实力抢热度，到底是什么情况？下面就跟小编一起来看一看吧。</p>
+        </div>
+    </div>
+</div>
 
 <!--footer1-->
 <div class="footer1">
@@ -152,13 +222,13 @@
 <div class="footer3 contain">
     <div class="footer3-one ">
         <li>
-            <a href="#">网站首页</a><span>|</span>
+            <a href="index.html">网站首页</a><span>|</span>
 
-            <a href="#">产品中心</a><span>|</span>
+            <a href="product.html">产品中心</a><span>|</span>
 
             <a href="#">促销活动</a><span>|</span>
 
-            <a href="#">招商加盟</a><span>|</span>
+            <a href="attend.html">招商加盟</a><span>|</span>
 
             <a href="#">常见问题</a><span>|</span>
 
@@ -182,5 +252,7 @@
         </p>
     </div>
 </div>
+
+
 </body>
 </html>

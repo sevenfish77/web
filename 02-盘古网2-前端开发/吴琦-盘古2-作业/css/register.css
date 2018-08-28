@@ -1,0 +1,112 @@
+.center {
+    height: 700px;
+    border-top: 1px #ff3253 solid;
+    border-bottom: 1px #ddd solid;
+    background: #fafafa;
+}
+.center-box {
+    height: 600px;
+    background: #fff;
+    border: 1px #dadada solid;
+    margin-top: 48px;
+}
+.center-bbox {
+    width: 1075px;
+    margin: 0 auto;
+}
+.center-bbox-top {
+    height: 65px;
+    border-bottom: 1px #dadada solid;
+}
+.center-bbox-top span {
+    height: 38px;
+    border-bottom: 3px #ff3253 solid;
+    line-height: 38px;
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 20px;
+    color: #2C2C2C;
+    font-weight: bolder;
+}
+    .center-bbox-bottom-one {
+        width: 780px;
+        height: 535px;
+    }
+
+        table {
+            margin-top: 30px;
+        }
+        table .inpub {
+            width: 284px;
+            height: 34px;
+            border-radius:2px;
+            margin-top: 20px;
+            border:1px #d9d9d9 solid;
+            line-height: 34px;
+        }
+            .inpub input {
+                width: 248px;
+                height: 34px;
+                border-radius:2px;
+                float: right;
+            }
+            .inpub i {
+                width: 36px;
+                height: 34px;
+                font-size: 16px;
+                margin-left: 8px;
+                color: #cbcbcb;
+            }
+
+        table img {
+            display:inline-block;
+            margin-left: -90px;
+            border-radius:2px;
+        }
+
+        .imgyzm {
+            display:inline-block;
+            margin-top:22px;
+            margin-left: -43px;
+        }
+        .yue {
+            margin-top: 60px;
+        }
+        .zcd {
+
+            margin-top:35px;
+            font-size: 14px;
+            line-height: 50px;
+        }
+        .zcd :hover {
+            background: #ff3333;
+            color: #fff;
+        }
+            .zcd input {
+                width: 248px;
+                height: 50px;
+                background: #ff3253;
+                color:#fff;
+                font-size: 16px;
+            }
+    .center-bbox-bottom-two {
+        height: 290px;
+        width: 226px;
+        border-left: 1px #dadada solid;
+        margin-top: 60px;
+    }
+        .zc {
+            display: inline-block;
+            width: 105px;
+            height: 30px;
+            border-radius: 3px;
+            background: #f7ba00;
+            color: #fff;
+            margin-top: 40px;
+            margin-left: 65px;
+            line-height: 30px;
+            font-size: 14px
+        }
+        .zc:hover {
+            background: #ff3253;
+        }

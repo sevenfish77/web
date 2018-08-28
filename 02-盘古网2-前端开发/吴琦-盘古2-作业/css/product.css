@@ -1,0 +1,78 @@
+.center-top {
+    height: 202px;
+    border-top: 1px #ff3253 solid;
+}
+    .center-top-one {
+        height: 52px;
+        border-bottom: 1px #e7e7e7 solid;
+        margin-top: 15px;
+        line-height: 52px;
+        color: #494949;
+    }
+    .center-top-two {
+        height: 52px;
+        border-bottom: 1px #e7e7e7 solid;
+        line-height: 52px;
+
+    }
+        .border {
+            display:inline-block;
+            width: 54px;
+            height: 21px;
+            line-height: 21px;
+            border: 1px #ff3253 solid;
+
+        }
+
+        .center-top-two a {
+            color: #707070;
+            padding:0 22px;
+        }
+            .center-top-two a:hover {
+                color: #ff3253;
+
+            }
+    .center-top-three {
+        height: 80px;
+        border-bottom: 1px #e7e7e7 solid;
+        line-height: 80px;
+    }
+        .center-top-three span {
+            padding: 0 30px;
+        }
+        
+.center-bottom {
+    height: 1530px;
+    background: #f5f5f5;
+    border-bottom: 1px #dddddd solid;
+}
+    .center-bottom-box {
+        height: 1380px;
+        margin-top: 30px;
+    }
+        .theHang {
+            height: 337px;
+            margin-top: 12px;
+        }
+            .theHang-box {
+                height: 337px;
+                width: 230px;
+                background: #fff;
+                margin-left: 12px;
+            }
+                .theHang-box img {
+                    margin-top: 50px;
+                }
+                .theHang-box p {
+                    color: #d10000;
+                    font:20px/35px "Microsoft";
+                    margin-top: 40px;
+                    font-weight: bolder;
+                }
+                .theHang-box span {
+                    display:inline-block;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    color: #5d5d5d;
+                    font-weight: bolder;
+                }
